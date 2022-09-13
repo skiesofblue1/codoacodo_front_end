@@ -1,12 +1,9 @@
-* {
-    box-sizing: border-box;
-}
 .flex{
     display: flex;
     justify-content: baseline;
 }
 .logocac{
-    max-width: 5em;
+    max-width: 4em;
     height: auto;
 }
 .estiloconf{
@@ -15,10 +12,23 @@
     text-align: center;
     font-size: 1.2em;
 }
+.estilonav:hover{
+    color: white
+}
+.estilonav1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(7, 183, 7);
+    white-space: nowrap;
+    justify-content: space-between;
+}
 .estilonav{
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    text-align: center;
+    color: rgb(180, 179, 179);
+    white-space: nowrap;
+    justify-content: space-between;
+}
+.padre{
+    position: relative;
 }
 .imagenba1{
     width: 100%;
@@ -28,7 +38,7 @@
 
 .texto1{
     position: absolute;
-    top: 55%; 
+    top: 40%; 
     right: 0%;
     width: 35%;
     color: white;
@@ -37,7 +47,7 @@
 }
 .boton1{
     position: absolute;
-    top: 80%; 
+    top: 62%; 
     right: 10%;
     width: 35%;
     text-align: right;
@@ -45,7 +55,7 @@
 }
 .boton2{
     position: absolute;
-    top: 80%; 
+    top: 62%; 
     right: 0%;
     width: 35%;
     text-align: right;
@@ -55,6 +65,9 @@
     text-align: center;
     padding: 1%;
 }
+.mtb-{
+    margin-bottom: -1rem;
+}
 .texto2{
     font-size: 1.7em;
     font-weight: bold;
@@ -63,9 +76,48 @@
     font-size: 0.8em;
 }
 .imagen2{
-    max-width: 45%;
+    max-width: 100%;
 }
-.col-4{
-    width: 20%;
-    float: left;
+.ml-{
+    margin-left: -3rem;
+}
+.lorem{
+    font-size: 0.75rem;
+}
+.fullimage{
+    min-width: 100%;
+}
+.botongris{
+    color: grey;
+}
+.greybg{
+    background-color: rgb(67, 67, 67);
+}
+.imagenplaya{
+    width: 100%;
+}
+.colorba{
+    color: white;
+}
+.textoba{
+    font-size: 0.95rem;
+    color: white;
+}
+.ignite{
+    text-decoration: dotted underline;
+}
+.recuerda{
+    font-size: 0.7rem;
+    color: grey;
+}
+.btn.send{
+    min-width: 100%;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    background-color: rgb(12, 72, 109);
+    color: white;
+    white-space: wrap;
 }
