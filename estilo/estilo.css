@@ -1,31 +1,6 @@
-.flex{
-    display: flex;
-    justify-content: baseline;
-}
 .logocac{
     max-width: 4em;
     height: auto;
-}
-.estiloconf{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 1.2em;
-}
-.estilonav:hover{
-    color: white
-}
-.estilonav1{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(7, 183, 7);
-    white-space: nowrap;
-    justify-content: space-between;
-}
-.estilonav{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(180, 179, 179);
-    white-space: nowrap;
-    justify-content: space-between;
 }
 .padre{
     position: relative;
@@ -33,59 +8,23 @@
 .imagenba1{
     width: 100%;
     filter: brightness(40%);
-    position: relative;
-}
-
-.texto1{
-    position: absolute;
-    top: 40%; 
-    right: 0%;
-    width: 35%;
-    color: white;
-    text-align: right;
-    margin: 7%;
-}
-.boton1{
-    position: absolute;
-    top: 62%; 
-    right: 10%;
-    width: 35%;
-    text-align: right;
-    margin: 7%;
-}
-.boton2{
-    position: absolute;
-    top: 62%; 
-    right: 0%;
-    width: 35%;
-    text-align: right;
-    margin: 7%;
-}
+ }
 .oradores{
     text-align: center;
     padding: 1%;
 }
-.mtb-{
-    margin-bottom: -1rem;
-}
 .texto2{
-    font-size: 1.7em;
-    font-weight: bold;
+    font-size: 2em;
+    font-weight: 600;
 }
 .texto3{
-    font-size: 0.8em;
+    font-size: 1em;
 }
 .imagen2{
     max-width: 100%;
 }
-.ml-{
-    margin-left: -3rem;
-}
 .lorem{
     font-size: 0.75rem;
-}
-.fullimage{
-    min-width: 100%;
 }
 .botongris{
     color: grey;
@@ -120,4 +59,98 @@ footer{
     background-color: rgb(12, 72, 109);
     color: white;
     white-space: wrap;
+}
+
+@media screen and (max-width: 466px){
+    div.texto1{
+        font-size: 0.5rem;
+        position: absolute; 
+        top: 0%;
+        color: white;
+        text-align: right;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    div.boton1{
+        position: absolute;
+        left: 4%;
+        top: 75%;
+        text-align: left;
+    }
+    div.boton2{
+        position: absolute;
+        right: 4%;
+        top: 75%;
+        text-align: left;
+    }
+    #conferencia {
+        font-size: 0.65rem;
+    }
+    }
+@media screen and (min-width: 467px) and (max-width: 768px){
+    div.texto1{
+        position: absolute; 
+        top: 10%;
+        width: 100%;
+        color: white;
+        text-align: right;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    div.boton1{
+        position: absolute; 
+        top: 80%;
+        width: 100%;
+        color: white;
+        text-align: right;
+        padding-left: 5%;
+        padding-right: 40%;
+    }
+    div.boton2{
+        position: absolute; 
+        top: 80%;
+        width: 100%;
+        color: white;
+        text-align: right;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+}
+@media screen and (min-width: 769px){
+    div.texto1{
+        position: absolute; 
+        right: 0%;
+        bottom: 15%;
+        width: 35%;
+        color: white;
+        text-align: right;
+        margin: 7%;
+    }
+    div.boton1{
+        position: absolute;
+        right: 20%;
+        bottom: 10%;
+        width: 35%;
+        text-align: right;
+        margin: 7%;
+    }
+    div.boton2{
+        position: absolute;
+        right: 0%;
+        bottom: 10%;
+        width: 35%;
+        text-align: right;
+        margin: 7%;
+    }
+}
+@media screen and (min-width: 1250px){
+    div.boton1{
+        position: absolute;
+        right: 10%;
+        bottom: 10%;
+        width: 35%;
+        text-align: right;
+        margin: 7%;
+    }
 }
