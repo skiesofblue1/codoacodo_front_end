@@ -23,7 +23,7 @@
       <div class="container-fluid px-5 mx-5">
          <ul class="navbar-nav my-auto">
             <li class="nav-item">
-                <a class="nav-link estiloconf text-white h5" href="#">Conf Bs As</a>
+                <a class="nav-link estiloconf text-white h5" href="index.html">Conf Bs As</a>
             </li>
         </ul>
         <ul class="navbar-nav my-auto">
@@ -79,41 +79,43 @@
 <p class="text-center mt-3">VENTA</p>
 <h1 class="text-center">VALOR DE TICKET $200</h1>
 <!-- Cuarta Sección- Formulario  -->
-<div class="container">
-    <div class="row my-4">
-        <div class="form-group col-12 col-lg-3 offset-lg-3">
-            <input type="text" class="form-control" placeholder="Nombre">
-        </div>
-        <div class="form-group col-12 col-lg-3">
-            <input type="text" class="form-control" placeholder="Apellido">
-        </div>
-        <div class="form-group col-12 col-lg-6 offset-lg-3 my-2">
-            <input type="text" class="form-control" placeholder="Correo">
-        </div>
-        <div class="form-group col-12 col-lg-3 offset-lg-3">
-            <label for="cantidad">Cantidad</label>
-            <input type="text" class="form-control" placeholder="cantidad">
-        </div>
-        <div class="form-group col-12 col-lg-3">
-            <label for="categoria">Categoría</label>
-            <select class="form-control">
-                <option value="1">Estudiante</option>
-                <option value="2">Trainee</option>
-                <option value="3">Junior</option>
-            </select>
-        </div>
-        <div class="col-12 col-lg-6 offset-lg-3 my-3 total-pagar py-2 px-4">
-            <p>Total a Pagar: $ </p>
+<div id="elForm">
+    <div class="container">
+        <div class="row my-4">
+            <div class="form-group col-12 col-lg-3 offset-lg-3">
+                <input type="text" class="form-control" placeholder="Nombre" id="inputNombre">
+            </div>
+            <div class="form-group col-12 col-lg-3">
+                <input type="text" class="form-control" placeholder="Apellido" id="inputApellido">
+            </div>
+            <div class="form-group col-12 col-lg-6 offset-lg-3 my-2">
+                <input type="text" class="form-control" placeholder="Correo" id="inputCorreo">
+            </div>
+            <div class="form-group col-12 col-lg-3 offset-lg-3">
+                <label for="cantidad">Cantidad</label>
+                <input type="number" class="form-control" placeholder="cantidad" id="inputCantidad">
+            </div>
+            <div class="form-group col-12 col-lg-3">
+                <label for="categoria">Categoría</label>
+                <select class="form-control">
+                    <option id="estudiante">Estudiante</option>
+                    <option id="trainee">Trainee</option>
+                    <option id="junior">Junior</option>
+                </select>
+            </div>
+            <div class="col-12 col-lg-6 offset-lg-3 my-3 total-pagar py-2 px-4">
+                <p>Total a Pagar: $ </p><p id="precio-actual"></p>
+            </div>
         </div>
     </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-lg-3 offset-lg-3">
-            <button class="btn btn-success w-100">Borrar</button>
-        </div>
-        <div class="col-12 col-lg-3">
-            <button class="btn btn-success w-100">Resumen</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-3 offset-lg-3">
+                <button class="btn btn-success w-100">Borrar</button>
+            </div>
+            <div class="col-12 col-lg-3">
+                <button class="btn btn-success w-100">Resumen</button>
+            </div>
         </div>
     </div>
 </div>
