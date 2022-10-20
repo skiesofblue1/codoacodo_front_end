@@ -15,9 +15,9 @@ const precioNeto = document.getElementById("precioNeto");
 
 function precioTotal (e) {
     e.preventDefault();
-    if (tipoUsuario.value == `1`) {
+    if (tipoUsuario.value === `1`) {
         precioTicket = precioTicket * PRECIO_ESTUDIANTE;
-    } else if (tipoUsuario.value == `2`) {
+    } else if (tipoUsuario.value === `2`) {
         precioTicket = precioTicket * PRECIO_TRAINEE;
     } else {
         precioTicket = precioTicket * PRECIO_JUNIOR;
